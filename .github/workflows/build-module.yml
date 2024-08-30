@@ -12,6 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
+          - tag: "SNAPSHOT"
+            pkgarch: aarch64_cortex-a53
+            target: mediatek
+            subtarget: filogic
+            vermagic: "r1"
           - tag: "22.03.4"
             pkgarch: mips_24kc
             target: ath79
